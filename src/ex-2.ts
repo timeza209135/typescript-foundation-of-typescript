@@ -1,5 +1,11 @@
 function sumEvenNumbers(numbers: number[]): number {
-  //Start Coding Here
+  let sum = 0;
+  for (let number of numbers) {
+    if (number % 2 === 0) {
+      sum += number;
+    }
+  }
+  return sum;
 }
 
 console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6])); // 12
